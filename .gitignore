@@ -1,0 +1,74 @@
+# ==========================================
+# ROS 2 & Colcon Build Artifacts
+# ==========================================
+build/
+install/
+log/
+COLCON_IGNORE
+*.orig
+
+# ==========================================
+# Python & Virtual Environments (uv / pip)
+# ==========================================
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ==========================================
+# Secrets, Keys & Local Configurations
+# ==========================================
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# ==========================================
+# Machine Learning & LeRobot / PyTorch Datasets
+# ==========================================
+data/
+outputs/
+checkpoints/
+wandb/
+*.pt
+*.pth
+*.safetensors
+*.bin
+*.onnx
+*.parquet
+*.h5
+*.hdf5
+
+# ==========================================
+# Embedded & ESP32 / PlatformIO / ESP-IDF
+# ==========================================
+.pio/
+.espressif/
+sdkconfig.old
+firmware_build/
+
+# ==========================================
+# IDEs & Editor Configurations
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.directory
+
+# ==========================================
+# OS & System Cache
+# ==========================================
+.DS_Store
+Thumbs.db
+*.log

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<robot name="mobile_manipulator" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- 1. Base móvil Mecanum -->
+  <xacro:include filename="mecanum_base.xacro"/>
+
+  <!-- 2. Brazo Robótico -->
+  <xacro:include filename="arm.xacro"/>
+
+  <!-- 3. Sensores (LiDAR, IMU, Cámara RGB-D) -->
+  <xacro:include filename="sensors.xacro"/>
+
+  <!-- 4. Interfaces ros2_control y plugin Gazebo Harmonic -->
+  <xacro:include filename="ros2_control.xacro"/>
+
+</robot>
